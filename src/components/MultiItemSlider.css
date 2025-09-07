@@ -1,0 +1,39 @@
+/* src/index.css or App.css */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  color: white; /* arrow color */
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px; /* circular buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* arrow size */
+  font-weight: bold;
+}
+
+
+/* src/index.css */
+.swiper-pagination-bullet {
+  background: gray;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: blue; /* active bullet color */
+  opacity: 1;
+  transform: scale(1.2); /* slightly larger active bullet */
+}
